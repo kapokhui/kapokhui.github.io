@@ -10,8 +10,6 @@
     
     <title>
         
-            tags | 
-        
         伊水青鸾
     </title>
 
@@ -58,7 +56,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://kapokhui.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="tags | 伊水青鸾">
+    <meta property="og:title" content="伊水青鸾">
     <meta property="og:description" content="null">
     
 
@@ -223,60 +221,260 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#hexo常用命令笔记"><span class="post-toc-number">1.</span> <span class="post-toc-text">hexo常用命令笔记</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Deployment"><span class="post-toc-number">2.</span> <span class="post-toc-text">Deployment</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Docs-http-hexo-io-docs-deployment-html"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Docs: http://hexo.io/docs/deployment.html</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
 
 <!-- Layouts -->
 
-    <!-- Tags Cloud -->
-    <style>
-    #bottom{
-        position: relative;
-    }
+    <!-- Post Module -->
+    <div class="material-post_container">
 
-    @media screen and (max-width: 480px) {
-        .material-tagscloud{
-            margin: 6em 2em 0;
-        }
-    }
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
 
-    .material-tagscloud a{
-        text-decoration:none;
-        padding: 1px 9px;
-        margin: 9px 1px;
-        line-height: 40px;
-        white-space: nowrap;
-        transition: .6s;
-        opacity: .85;
-    }
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 1 + 1);
 
-    .material-tagscloud a:hover{
-        transition: .6s;
-        opacity: 1;
-        background: #FAFAFA;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    }
-</style>
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-1.png' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
 
-<div class=" material-tagscloud">
-    <div class="material-post mdl-grid">
-        <a href="/tags/生活/" style="font-size: 16px; color: #757575">生活</a>
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
     </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>伊水青鸾</strong>
+        <span>9月 21, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACz0lEQVR42u3aQW4cMQwEwP3/p51rACODbkoxxlLptFjbMypdaDX5+bpyfbCxsbGxsbGxsbFfyf7Eq3jBt9+fPeHvv/r+ud0zNjY29tnsGeN5K8/PeX5CfgTFnrGxsbEvYP9r60nxmJWr5DntfrCxsbGxV17zXLpmR/l8rNjY2NjY/6OArTw5p2JjY2NjzwKatmg9vyW5xrwiS8PGxsZ+PTtvmr7n84/2t7GxsbFfzG5XHuKv/zQpk8XOsbGxsQ9l54UhucC014aVgKkdEsXGxsY+lZ2UqGTgJsG314y8jEUBFjY2Nvah7NllICoYoxGcdlfFwWFjY2NfwG4jpFkhnI1aPh99dJTY2NjY17CXHl2u/FBmg6HY2NjY97CTf+hnxWzWWsiPuCic2NjY2IeyZ1eFPOjZNViZ7zC6imBjY2MfxG4HZVYC/Vkrd9dQJjY2NvbZ7NlG2zZwHhKttHg3dEWwsbGxfxU7b9auBPpfy2vz8CU2Njb2BexhcFMWudnBtQUVGxsb+zb2SnDflpb8WNt2BTY2NvY97DwAyi8JK8M9belKLiHY2NjYZ7PbRuysJZwXxdnBbQiVsLGxsX8tO99WGx6tBEN5I3nbVQQbGxv7IHYSDyXf59F/MUA5AmNjY2OfzW7brnkLIT+UNsxqWwXY2NjYZ7PbcjIbypk1bvPji4ofNjY29tHsPJRvW7B5gWn3kBc2bGxs7HvY64yVi8Ss5Vx8g42NjX0NO4+TZg3jfCQoj7qiixA2Njb2oew6molbBQkm/z4/7ihUwsbGxj6IvTJSM2P8/GdsbGzsG9hJ0Uoe3cZGbSN51mDGxsbGvoe9d9SyHdlZWUsFDBsbG/t69qwZkJfD9b1hY2NjY+8a02lj/fxQokgLGxsb+wL2LOiZjfi0b19pRWBjY2PfwG6Dmw2bKIc+Z0EVNjY29g3sexY2NjY2NjY2Njb2a9YfV7Ov8hTFEOwAAAAASUVORK5CYII=">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=https://kapokhui.github.io//2017/09/21/docs/2017-09-21/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=https://kapokhui.github.io//2017/09/21/docs/2017-09-21/index.html&via=伊水青鸾" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://kapokhui.github.io//2017/09/21/docs/2017-09-21/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://kapokhui.github.io//2017/09/21/docs/2017-09-21/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="hexo常用命令笔记"><a href="#hexo常用命令笔记" class="headerlink" title="hexo常用命令笔记"></a>hexo常用命令笔记</h1><p>npm install hexo -g #安装<br>npm update hexo -g #升级<br>hexo init #初始化<br>简写</p>
+<p>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo p == hexo publish<br>hexo g == hexo generate#生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy#部署<br>服务器</p>
+<p>hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP</p>
+<p>hexo clean #清除缓存 网页正常情况下可以忽略此条命令<br>hexo g #生成静态网页<br>hexo d #开始部署<br>监视文件变动</p>
+<p>hexo generate #使用 Hexo 生成静态文件快速而且简单<br>hexo generate –watch #监视文件变动<br>完成后部署</p>
+<p>两个命令的作用是相同的<br>hexo generate –deploy<br>hexo deploy –generate</p>
+<p>hexo deploy -g<br>hexo server -g<br>草稿</p>
+<p>hexo publish [layout] <title><br>模版</title></p>
+<p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #将.deploy目录部署到GitHub</p>
+<p>hexo new [layout] <title><br>hexo new photo “My Gallery”<br>hexo new “Hello World” –lang tw<br>变量    描述<br>layout    布局<br>title    标题<br>date    文件建立日期<br>title: 使用Hexo搭建个人博客<br>layout: post<br>date: 2014-03-03 19:07:43<br>comments: true<br>categories: Blog<br>tags: [Hexo]<br>keywords: Hexo, Blog<br>description: 生命在于折腾，又把博客折腾到Hexo了。给Hexo点赞。<br>模版（Scaffold）</title></p>
+<p>hexo new photo “My Gallery”<br>变量    描述<br>layout    布局<br>title    标题<br>date    文件建立日期<br>设置文章摘要</p>
+<p>以上是文章摘要 <a id="more"></a> 以下是余下全文<br>写作</p>
+<p>hexo new page <title><br>hexo new post <title><br>变量    描述<br>title    标题<br>year    建立的年份（4 位数）<br>month    建立的月份（去掉开头的零）<br>day    建立的日期（2 位数）<br>i_day    建立的日期（去掉开头的零）<br>报错</title></title></p>
+<p>1.找不到git部署</p>
+<p>ERROR Deployer not found: git<br>2.解决方法</p>
+<p>npm install hexo-deployer-git –save<br>3.部署类型设置git</p>
+<p>hexo 3.0 部署类型不再是github，_config.yml 中修改</p>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-http-hexo-io-docs-deployment-html"><a href="#Docs-http-hexo-io-docs-deployment-html" class="headerlink" title="Docs: http://hexo.io/docs/deployment.html"></a>Docs: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">http://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repository: git@<strong><em>.github.com:</em></strong>/<em>*</em>.github.io.git<br>  branch: master<br>4.xcodebuild</p>
+<p>xcode-select: error: tool ‘xcodebuild’ requires Xcode, but active developer directory ‘/Library/Developer/CommandLineTools’ is a command line tools instance</p>
+<p>npm install bcrypt<br>5.RSS不显示<br>安装RSS插件</p>
+<p>npm install hexo-generator-feed –save<br>开启RSS功能</p>
+<p>编辑hexo/_config.yml，添加如下代码：</p>
+<p>rss: /atom.xml #rss地址  默认即可<br>开启评论</p>
+<p>1.我使用多说代替自带的评论，在多说 网站注册 &gt; 后台管理 &gt; 添加新站点 &gt; 工具 === 复制通用代码 里面有 short_name</p>
+<p>1.在根目录 _config.yml 添加一行 disqus_shortname: jslite 是在多说注册时产生的<br>2.复制到 themes\landscape\layout_partial\article.ejs<br>把</p>
+<p>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;</p>
+<p><section id="comments"></section></p>
+<p><div id="disqus_thread"><br>  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><br></div><br><br>&lt;% } %&gt;<br>改为</p>
+<p>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;<br>  <section id="comments"><br>    <!-- 多说评论框 start --><br>    <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div><br>    <!-- 多说评论框 end --><br>    <!-- 多说公共JS代码 start (一个网页只需插入一次) --><br>    <script type="text/javascript"><br>    var duoshuoQuery = {short_name:’&lt;%= config.disqus_shortname %&gt;’};<br>      (function() {<br>        var ds = document.createElement(‘script’);<br>        ds.type = ‘text/javascript’;ds.async = true;<br>        ds.src = (document.location.protocol == ‘https:’ ? ‘https:’ : ‘http:’) + ‘//static.duoshuo.com/embed.js’;<br>        ds.charset = ‘UTF-8’;<br>        (document.getElementsByTagName(‘head’)[0]<br>         || document.getElementsByTagName(‘body’)[0]).appendChild(ds);<br>      })();<br>      </script><br>    <!-- 多说公共JS代码 end --><br>  </section><br>&lt;% } %&gt;</p>
+<p>链接：<a href="http://www.jianshu.com/p/eb02029f7a81" target="_blank" rel="external">http://www.jianshu.com/p/eb02029f7a81</a><br>來源：简书</p>
+
+    
+
+    
 </div>
 
 
-<script>
-    var adjustFooter = function() {
-        if( ($('#bottom').offset().top + $('#bottom').outerHeight() ) < $(window).height() ) {
-            var footerBottom = $(window).height() - $('#bottom').outerHeight() - $('#bottom').offset().top;
-            $('#bottom').css('bottom', '-' + footerBottom + 'px');
-        }
-    };
+                
 
-    $(document).ready(function() {
-        adjustFooter();
-    });
-</script>
+                <!-- Post Comments -->
+                
+                    
 
 
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/05/11/前言/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
 
 
 
@@ -458,6 +656,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
